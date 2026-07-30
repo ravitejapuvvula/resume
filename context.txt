@@ -1,0 +1,81 @@
+Professional Summary
+Senior Software Engineer and AI Specialist with 10+ years of experience designing and deploying large-scale
+agentic, generative AI, and automation systems across the finance, telecom, and utilities sectors. Deep
+expertise in the Microsoft AI stack, multi-agent architectures, and RAG pipelines. Proven record of
+delivering measurable impact: $400K annual savings from chatbot platform migration, $200K saved through
+an AI meeting summary product and a custom Hugging Face lead-classification model that outperformed
+Salesforce Einstein by 28%. Dedicated to bridging research and production-grade engineering to drive
+enterprise-wide AI adoption.
+Core Competencies
+Agentic AI & LLMs: Multi-Agent Systems using Microsoft Copilot Studio, LangGraph, Prompt Engineering,
+Chain-of-Thought Reasoning, Tool-Use & Function Calling, Autonomous Workflow Design
+Generative AI: Azure OpenAI, RAG Pipeline Design, MCP Servers, Semantic Search, Vector Databases
+(Weaviate and ChromaDB), Context Window Management
+ML & Deep Learning: PyTorch, Hugging Face Transformers, NLP Toolkits (spaCy, NLTK)
+MLOps & AI Backend: Airflow, FastAPI, Databricks, Azure Function Apps, GitHub Actions / Pipelines,
+Heroku, REST & Webhook Integration
+Data & Cloud: Microsoft Power Platform, AWS S3, Power BI, Power Automate and Dataverse
+Automation (RPA): Blue Prism (AD01), UiPath (Certified Associate), Automation Anywhere (Advanced)
+Professional Experience
+FactSet Remote, UK
+Senior Software Engineer — AI & Agentic Systems Jun 2022 – Present
+○ Designed and deployed multi-agent agentic systems using Copilot Studio and MCP servers, enabling autonomous
+cross-system orchestration across multiple business units.
+○ Integrated Azure OpenAI with RAG into the enterprise chatbot; selected and deployed the best-performing Hugging
+Face embedding model to a production Vector DB, improving semantic retrieval accuracy.
+○ Engineered a custom lead-classification model (Hugging Face) trained on 2 years of Salesforce CRM data, achieving
+88% accuracy, outperforming Salesforce Einstein by 28%, and boosting sales team productivity by 45%.
+○ Designed and shipped an AI Meeting Summariser using LLM-generated structured notes from MS Teams transcripts,
+saving $200,000/year by replacing a potential Teams Premium subscription.
+○ Orchestrated Airflow workflows to extract raw data from Graph API and send summaries to 10,000+ users
+asynchronously.
+○ Architected and led the migration of the enterprise chatbot from AiSERA to Microsoft Copilot Studio, delivering a
+92% resolution rate and $400,000 in annual savings via guided agentic workflows.
+○ Enhanced sales consultants’ productivity by delivering a Client Meeting Preparation document that consolidates
+information from multiple data sources, including Salesforce, internal ticketing systems, email context, and more.
+○ Designed autonomous agents in Copilot Studio that can perform actions on systems, triggered by events originating
+from AWS Queue, Graph Subscriptions etc.
+○ Built on-premises FastAPI inference services enabling the AI agent to take real-time actions on behalf of support
+teams; consumed third-party vendor APIs for automated software licence provisioning.
+○ Defined AI requirements across business units and produced technical design documents; reported model and
+chatbot performance metrics via Power BI dashboards.
+Loughborough University Loughborough, UK
+Business Intelligence Consultant Dec 2021 – May 2022
+○ Evaluated university innovation activities and research performance; created and presented 5+ Power BI dashboards
+illustrating year-on-year trends to senior leadership.
+○ Gathered data via data pipelines from publicly available government sources in Leicestershire and consolidated
+university datasets for the Council.
+Accenture (Client: Wisconsin Energy Corporation) India
+Senior RPA Developer Jan 2020 – Oct 2021
+○ Designed and deployed 15+ automation bots (Blue Prism, UiPath) across SAP, Web, Desktop, and Citrix, delivering
+£90,000 in annual cost savings; managed end-to-end RPA lifecycle from PDD/SDD through UAT to production.
+○ Received the Pinnacle Award for outstanding client requirement analysis and efficient workflow delivery.
+Tata Consultancy Services (Client: Ericsson) China
+RPA Developer Jun 2016 – Jan 2020
+○ Identified manual business processes that take six hours to complete by Chinese onsite engineers and automated
+the China Mobile License transfer process using BluePrism. Travelled onsite to the Nanjing Ericsson factory and
+co-ordinated with clients to successfully deliver the project.
+○ Scoped and delivered over 25 automation processes optimising bot execution to reduce the average handling time
+from 15 minutes to five seconds.
+Key Projects
+Sales Prospect Classifier: Fine-tuned a Hugging Face transformer model on 2 years of labelled CRM leads
+to classify prospects into Sales Classified, Sales Rejected, and Marketing Rejected. Integrated directly with
+Salesforce via API; benchmarked against Salesforce Einstein and achieved a 28% accuracy improvement,
+lifting sales team productivity by 45%.
+AI Meeting Summariser: Built a pipeline to retrieve MS Teams transcripts, generate structured meeting
+notes with Azure OpenAI, and push summaries to internal knowledge systems. Eliminated the need for a
+Microsoft Teams Premium subscription, saving $200K/year.
+Chatbot Platform Migration: Led end-to-end migration from AiSERA to Microsoft Copilot Studio with
+multi-agent agentic workflows powered by MCP servers, achieving a 92% resolution rate and $400K annual
+savings.
+Enterprise AI Projects: Robin Desk Management to manage desk capacity, Cloud Spend Optimization to
+reduce cloud costs, HR workflow automation with Workday RaaS integrations
+Education
+Loughborough University UK
+MSc Data Science (Distinction) 2021 – 2022
+GITAM University India
+B.Tech, Electronics and Communication (Distinction) 2012 – 2016
+Certifications
+Microsoft Azure Fundamentals (AZ-900)
+Blue Prism Certified Developer (AD01) | UiPath Certified Associate Developer | Automation
+Anywhere Certified Advanced RPA Professional (V11.0

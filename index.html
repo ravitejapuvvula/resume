@@ -1,12 +1,357 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Raviteja Puvvula - Resume</title>
-  <!-- Replace resume.pdf with your exact PDF filename if it is named differently -->
-  <meta http-equiv="refresh" content="0; url=resume.pdf">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ravi Puvvula — AI Engineer</title>
+  <meta name="description" content="Ravi Puvvula — Senior Software Engineer & AI Engineer building agentic, generative AI and automation systems." />
+  <meta name="author" content="Ravi Puvvula" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ravi Puvvula — AI Engineer" />
+  <meta property="og:description" content="Building agentic AI, RAG pipelines and automation systems at enterprise scale." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <p>Loading resume... If it does not redirect automatically, <a href="resume.pdf">click here to download/view the PDF</a>.</p>
+  <canvas id="neural-bg" aria-hidden="true"></canvas>
+
+  <!-- ===== Navbar ===== -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__brand">RP<span>.</span></a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main id="top">
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="hero">
+      <div class="hero__inner">
+        <p class="hero__eyebrow">Hello, I'm</p>
+        <h1 class="hero__name">Ravi Puvvula</h1>
+        <h2 class="hero__role">
+          <span class="hero__role-static">I build</span>
+          <span class="hero__role-dynamic" id="roleText">agentic AI systems</span>
+        </h2>
+        <p class="hero__bio">
+          Senior Software Engineer & <strong>AI Engineer</strong> with 10+ years designing and
+          deploying large-scale <strong>agentic</strong>, <strong>generative AI</strong> and
+          automation systems across finance, telecom and utilities. I specialize in multi-agent
+          architectures, RAG pipelines and the Microsoft AI stack — turning research into
+          production systems that ship real, measurable impact.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#projects">View Projects</a>
+          <!-- Update resume.pdf if your file has a different name -->
+          <a class="btn btn--ghost" href="resume.pdf" target="_blank" rel="noopener">Resume ↗</a>
+        </div>
+        <ul class="hero__stats">
+          <li><strong>$600K+</strong><span>Annual savings delivered</span></li>
+          <li><strong>10+</strong><span>Years of experience</span></li>
+          <li><strong>40+</strong><span>Automations & AI systems shipped</span></li>
+        </ul>
+      </div>
+      <a class="hero__scroll" href="#about" aria-label="Scroll to About">↓</a>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="section" id="about">
+      <div class="section__head">
+        <span class="section__index">01</span>
+        <h2 class="section__title">About</h2>
+      </div>
+      <div class="about">
+        <div class="about__text">
+          <p>
+            I'm an AI Engineer focused on bridging <strong>research and production-grade
+            engineering</strong> to drive enterprise-wide AI adoption. My work spans autonomous
+            multi-agent orchestration, retrieval-augmented generation and fine-tuned models
+            that outperform off-the-shelf tools.
+          </p>
+          <p>
+            Recent highlights include migrating an enterprise chatbot to Microsoft Copilot Studio
+            for a <strong>92% resolution rate and $400K in annual savings</strong>, shipping an AI
+            meeting summariser that saved <strong>$200K/year</strong>, and training a Hugging Face
+            lead-classification model that beat Salesforce Einstein by <strong>28%</strong>.
+          </p>
+          <p>
+            I hold an <strong>MSc in Data Science (Distinction)</strong> from Loughborough
+            University and love building systems that make AI genuinely useful at scale.
+          </p>
+        </div>
+        <aside class="about__card">
+          <h3>Focus Areas</h3>
+          <ul>
+            <li>Multi-Agent &amp; Agentic AI</li>
+            <li>RAG &amp; Semantic Search</li>
+            <li>LLM Fine-Tuning &amp; NLP</li>
+            <li>MLOps &amp; AI Backends</li>
+            <li>Intelligent Automation (RPA)</li>
+          </ul>
+          <h3 class="about__card-sub">Education</h3>
+          <p class="about__edu">MSc Data Science — Loughborough University <span>Distinction</span></p>
+          <p class="about__edu">B.Tech ECE — GITAM University <span>Distinction</span></p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===== Experience ===== -->
+    <section class="section" id="experience">
+      <div class="section__head">
+        <span class="section__index">02</span>
+        <h2 class="section__title">Experience</h2>
+      </div>
+      <ol class="timeline">
+        <li class="timeline__item">
+          <div class="timeline__meta">
+            <span class="timeline__date">Jun 2022 — Present</span>
+          </div>
+          <div class="timeline__body">
+            <h3>Senior Software Engineer — AI &amp; Agentic Systems <span>· FactSet</span></h3>
+            <p>
+              Design and deploy multi-agent systems using Copilot Studio and MCP servers for
+              autonomous cross-system orchestration. Integrated Azure OpenAI + RAG into the
+              enterprise chatbot, built on-prem FastAPI inference services, and orchestrated
+              Airflow workflows delivering AI summaries to 10,000+ users.
+            </p>
+            <ul class="tags">
+              <li>Copilot Studio</li><li>MCP Servers</li><li>Azure OpenAI</li>
+              <li>RAG</li><li>Hugging Face</li><li>FastAPI</li><li>Airflow</li>
+            </ul>
+          </div>
+        </li>
+        <li class="timeline__item">
+          <div class="timeline__meta">
+            <span class="timeline__date">Dec 2021 — May 2022</span>
+          </div>
+          <div class="timeline__body">
+            <h3>Business Intelligence Consultant <span>· Loughborough University</span></h3>
+            <p>
+              Evaluated research performance and built 5+ Power BI dashboards illustrating
+              year-on-year trends for senior leadership, sourced via data pipelines from public
+              government datasets.
+            </p>
+            <ul class="tags"><li>Power BI</li><li>Data Pipelines</li><li>Analytics</li></ul>
+          </div>
+        </li>
+        <li class="timeline__item">
+          <div class="timeline__meta">
+            <span class="timeline__date">Jan 2020 — Oct 2021</span>
+          </div>
+          <div class="timeline__body">
+            <h3>Senior RPA Developer <span>· Accenture (Wisconsin Energy)</span></h3>
+            <p>
+              Designed and deployed 15+ automation bots across SAP, Web, Desktop and Citrix,
+              delivering £90K in annual savings. Received the Pinnacle Award for requirement
+              analysis and workflow delivery.
+            </p>
+            <ul class="tags"><li>Blue Prism</li><li>UiPath</li><li>SAP</li><li>Automation</li></ul>
+          </div>
+        </li>
+        <li class="timeline__item">
+          <div class="timeline__meta">
+            <span class="timeline__date">Jun 2016 — Jan 2020</span>
+          </div>
+          <div class="timeline__body">
+            <h3>RPA Developer <span>· TCS (Ericsson)</span></h3>
+            <p>
+              Scoped and delivered 25+ automation processes, reducing average handling time from
+              15 minutes to 5 seconds. Automated the China Mobile license transfer process on-site
+              at Ericsson's Nanjing factory.
+            </p>
+            <ul class="tags"><li>Blue Prism</li><li>Process Automation</li></ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section class="section" id="projects">
+      <div class="section__head">
+        <span class="section__index">03</span>
+        <h2 class="section__title">Projects</h2>
+      </div>
+      <div class="projects">
+        <article class="project">
+          <div class="project__top">
+            <span class="project__icon">🤖</span>
+            <span class="project__year">2024</span>
+          </div>
+          <h3>Enterprise Chatbot Migration → Copilot Studio</h3>
+          <p>
+            Led end-to-end migration from AiSERA to Microsoft Copilot Studio with multi-agent
+            agentic workflows powered by MCP servers — reaching a 92% resolution rate and $400K
+            in annual savings.
+          </p>
+          <ul class="tags"><li>Copilot Studio</li><li>MCP</li><li>Agentic AI</li></ul>
+          <p class="project__impact">$400K/yr saved · 92% resolution</p>
+        </article>
+
+        <article class="project">
+          <div class="project__top">
+            <span class="project__icon">🧠</span>
+            <span class="project__year">2023</span>
+          </div>
+          <h3>Sales Prospect Classifier</h3>
+          <p>
+            Fine-tuned a Hugging Face transformer on 2 years of labelled CRM leads to classify
+            prospects. Integrated with Salesforce via API and benchmarked against Einstein —
+            achieving 88% accuracy, a 28% improvement.
+          </p>
+          <ul class="tags"><li>Hugging Face</li><li>NLP</li><li>Salesforce API</li></ul>
+          <p class="project__impact">+28% vs Einstein · +45% productivity</p>
+        </article>
+
+        <article class="project">
+          <div class="project__top">
+            <span class="project__icon">📝</span>
+            <span class="project__year">2023</span>
+          </div>
+          <h3>AI Meeting Summariser</h3>
+          <p>
+            Pipeline that retrieves MS Teams transcripts, generates structured notes with Azure
+            OpenAI, and pushes summaries to internal knowledge systems — replacing a Teams Premium
+            subscription.
+          </p>
+          <ul class="tags"><li>Azure OpenAI</li><li>Graph API</li><li>Airflow</li></ul>
+          <p class="project__impact">$200K/yr saved</p>
+        </article>
+
+        <article class="project">
+          <div class="project__top">
+            <span class="project__icon">🔎</span>
+            <span class="project__year">2023</span>
+          </div>
+          <h3>Enterprise RAG Retrieval</h3>
+          <p>
+            Integrated Azure OpenAI with RAG into the enterprise chatbot; evaluated and deployed
+            the best-performing Hugging Face embedding model to a production vector database to
+            improve semantic retrieval accuracy.
+          </p>
+          <ul class="tags"><li>RAG</li><li>Weaviate / ChromaDB</li><li>Embeddings</li></ul>
+          <p class="project__impact">Higher retrieval accuracy</p>
+        </article>
+
+        <article class="project">
+          <div class="project__top">
+            <span class="project__icon">📋</span>
+            <span class="project__year">2023</span>
+          </div>
+          <h3>Client Meeting Preparation Agent</h3>
+          <p>
+            Autonomous agent that consolidates Salesforce, internal ticketing, email context and
+            more into a single meeting-prep briefing — boosting sales consultants' productivity.
+          </p>
+          <ul class="tags"><li>Agentic AI</li><li>FastAPI</li><li>Data Fusion</li></ul>
+          <p class="project__impact">Faster meeting prep</p>
+        </article>
+
+        <article class="project">
+          <div class="project__top">
+            <span class="project__icon">⚙️</span>
+            <span class="project__year">2022</span>
+          </div>
+          <h3>Event-Driven Autonomous Agents</h3>
+          <p>
+            Designed Copilot Studio agents that take real-time actions on systems, triggered by
+            events from AWS Queues and Graph Subscriptions — including automated software licence
+            provisioning via vendor APIs.
+          </p>
+          <ul class="tags"><li>Copilot Studio</li><li>AWS SQS</li><li>Webhooks</li></ul>
+          <p class="project__impact">Real-time automation</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section class="section" id="skills">
+      <div class="section__head">
+        <span class="section__index">04</span>
+        <h2 class="section__title">Skills</h2>
+      </div>
+      <div class="skills">
+        <div class="skills__group">
+          <h3>Agentic AI &amp; LLMs</h3>
+          <ul class="tags">
+            <li>Multi-Agent Systems</li><li>Copilot Studio</li><li>LangGraph</li>
+            <li>Prompt Engineering</li><li>Chain-of-Thought</li><li>Tool / Function Calling</li>
+          </ul>
+        </div>
+        <div class="skills__group">
+          <h3>Generative AI</h3>
+          <ul class="tags">
+            <li>Azure OpenAI</li><li>RAG Pipelines</li><li>MCP Servers</li>
+            <li>Semantic Search</li><li>Weaviate</li><li>ChromaDB</li>
+          </ul>
+        </div>
+        <div class="skills__group">
+          <h3>ML &amp; Deep Learning</h3>
+          <ul class="tags">
+            <li>PyTorch</li><li>Hugging Face</li><li>Transformers</li>
+            <li>spaCy</li><li>NLTK</li>
+          </ul>
+        </div>
+        <div class="skills__group">
+          <h3>MLOps &amp; Backend</h3>
+          <ul class="tags">
+            <li>FastAPI</li><li>Airflow</li><li>Databricks</li>
+            <li>Azure Functions</li><li>GitHub Actions</li><li>Heroku</li>
+          </ul>
+        </div>
+        <div class="skills__group">
+          <h3>Data &amp; Cloud</h3>
+          <ul class="tags">
+            <li>Power Platform</li><li>AWS S3</li><li>Power BI</li>
+            <li>Power Automate</li><li>Dataverse</li>
+          </ul>
+        </div>
+        <div class="skills__group">
+          <h3>Automation (RPA)</h3>
+          <ul class="tags">
+            <li>Blue Prism (AD01)</li><li>UiPath</li><li>Automation Anywhere</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section section--contact" id="contact">
+      <div class="section__head">
+        <span class="section__index">05</span>
+        <h2 class="section__title">Get in touch</h2>
+      </div>
+      <div class="contact">
+        <p class="contact__lead">
+          I'm always open to discussing AI engineering roles, agentic systems and interesting
+          collaborations. Let's build something.
+        </p>
+        <div class="contact__links">
+          <!-- TODO: replace with your real email address -->
+          <a class="btn btn--primary" href="mailto:your.email@example.com">Email me</a>
+          <!-- TODO: replace with your real LinkedIn URL -->
+          <a class="btn btn--ghost" href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="btn btn--ghost" href="resume.pdf" target="_blank" rel="noopener">Resume ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Ravi Puvvula · Built with HTML, CSS &amp; JavaScript · Hosted on GitHub Pages</p>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
